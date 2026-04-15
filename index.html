@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══ SEO: Core ══ -->
+  <title>Moaz Abdelwadoud, MD, DrPH, MPH | Public Health Researcher & Educator | CUNY</title>
+  <meta name="description" content="Dr. Moaz Abdelwadoud is a public health researcher, educator, and physician at CUNY Graduate School of Public Health. Research Scientist and Senior Director of Training at the Center for Systems & Community Design. Specializes in health systems research, patient-centered care, health equity, and global public health.">
+  <meta name="keywords" content="Moaz Abdelwadoud, public health researcher, CUNY public health, health systems research, patient-centered care, global health, DrPH, health equity, community engagement, telehealth, FDA research, health policy, New York public health, CUNY SPH, community-engaged research">
+  <meta name="author" content="Moaz Abdelwadoud">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://moazabdelwadoud.netlify.app/" />
+
+  <!-- ══ SEO: Open Graph ══ -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Moaz Abdelwadoud, MD, DrPH, MPH — Public Health Researcher & Educator" />
+  <meta property="og:description" content="Research Scientist & Senior Director of Training at CUNY SPH. Expert in health systems research, patient-centered care, and global public health." />
+  <meta property="og:image" content="headshot.jpeg" />
+  <meta property="og:url" content="https://moazabdelwadoud.netlify.app/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Moaz" />
+  <meta property="profile:last_name" content="Abdelwadoud" />
+
+  <!-- ══ SEO: Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Moaz Abdelwadoud, MD, DrPH, MPH — Public Health Researcher" />
+  <meta name="twitter:description" content="Research Scientist & Senior Director of Training at CUNY SPH. Global public health expert." />
+  <meta name="twitter:image" content="headshot.jpeg" />
+
+  <!-- ══ SEO: Schema.org Structured Data ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Moaz Abdelwadoud",
+    "honorificPrefix": "Dr.",
+    "honorificSuffix": "MD, DrPH, MPH",
+    "jobTitle": "Research Scientist and Senior Director of Training",
+    "description": "Public health researcher, educator, and physician specializing in health systems research, patient-centered care, community engagement, and global public health.",
+    "url": "https://moazabdelwadoud.netlify.app/",
+    "image": "headshot.jpeg",
+    "email": "moaz.abdelwadoud@sph.cuny.edu",
+    "sameAs": [
+      "https://www.linkedin.com/in/moazabdelwadoud",
+      "https://orcid.org/0000-0001-9716-5140",
+      "https://scholar.google.com/citations?user=mBmPj7QAAAAJ",
+      "https://pubmed.ncbi.nlm.nih.gov/?term=Abdelwadoud+M"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CUNY Graduate School of Public Health and Health Policy",
+      "url": "https://sph.cuny.edu/"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Kentucky", "description": "DrPH, Health Management and Policy, 2017" },
+      { "@type": "CollegeOrUniversity", "name": "Vrije Universiteit Amsterdam & Royal Tropical Institute", "description": "MPH, International Health Development, 2013" },
+      { "@type": "CollegeOrUniversity", "name": "Cairo University", "description": "MPH, Preventive Community Medicine, 2011" },
+      { "@type": "CollegeOrUniversity", "name": "Ain Shams University", "description": "MBBCh (MD Equivalent), First-Class Honours, 2005" }
+    ],
+    "knowsAbout": ["Health Systems Research","Patient-Centered Care","Community-Engaged Research","Global Public Health","Health Equity","Telehealth","Health Policy","Public Health Education"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:       #0d2240;
+      --navy-mid:   #1a3a6e;
+      --teal:       #1b6c7e;
+      --gold:       #c8932a;
+      --gold-light: #e8b856;
+      --cream:      #f5f1eb;
+      --white:      #ffffff;
+      --text:       #1a1a2e;
+      --muted:      #5a6a7e;
+      --rule:       rgba(13,34,64,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO ──────────────────────────────────────────── */
+    .hero {
+      background: var(--navy);
+      position: relative;
+      padding: 0 48px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      min-height: 420px;
+    }
+
+    /* Subtle radial glow — no world map */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 70% 50%, rgba(27,108,126,0.16) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(200,147,42,0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-divider {
+      position: absolute;
+      right: 320px;
+      top: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(200,147,42,0.4) 30%, rgba(200,147,42,0.4) 70%, transparent);
+    }
+
+    .hero-content {
+      padding: 60px 52px 60px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.67rem;
+      letter-spacing: 0.18em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 36px; height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .hero-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-credentials {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+
+    /* 7-line title block */
+    .hero-title-block {
+      border-left: 2px solid var(--gold);
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .title-line {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.5;
+    }
+
+    .title-line.bold {
+      font-weight: 600;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .title-line.spacer {
+      margin-top: 8px;
+    }
+
+    /* Photo column */
+    .hero-photo-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      padding: 40px 0;
+    }
+
+    .hero-photo-box {
+      width: 210px;
+      height: 210px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 2px solid rgba(200,147,42,0.5);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.45), 0 0 0 5px rgba(200,147,42,0.08);
+      background: var(--cream);
+      flex-shrink: 0;
+    }
+
+    .hero-headshot {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 12%;
+      display: block;
+    }
+
+    .gold-stripe {
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-eyebrow      { animation: fadeUp 0.7s 0.05s ease both; }
+    .hero-name         { animation: fadeUp 0.7s 0.15s ease both; }
+    .hero-credentials  { animation: fadeUp 0.7s 0.22s ease both; }
+    .hero-title-block  { animation: fadeUp 0.7s 0.30s ease both; }
+    .hero-photo-box    { animation: fadeUp 0.8s 0.10s ease both; }
+
+    /* ─── PAGE BODY ─────────────────────────────────────── */
+    .page-body {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .section:last-child { border-bottom: none; }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+      max-width: 200px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    /* ─── BIO ───────────────────────────────────────────── */
+    .bio-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* All paragraphs: identical style, no exceptions */
+    .bio-text p {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.05rem;
+      color: #2a3040;
+      margin-bottom: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .bio-text p:last-child { margin-bottom: 0; }
+
+    .bio-sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--navy-mid);
+      padding: 20px 22px;
+    }
+
+    .sidebar-card-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .sidebar-card-body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .affil-item { display: flex; flex-direction: column; gap: 2px; margin-bottom: 12px; }
+    .affil-item:last-child { margin-bottom: 0; }
+    .affil-role { font-weight: 600; font-size: 0.88rem; color: var(--navy); }
+    .affil-org  { font-size: 0.83rem; color: var(--muted); line-height: 1.4; }
+
+    /* ─── RESEARCH — 2×2 ────────────────────────────────── */
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
+
+    .research-card {
+      background: var(--white);
+      padding: 36px 30px;
+      border-top: 3px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .research-card:hover { border-color: var(--gold); }
+
+    .rc-icon {
+      width: 42px; height: 42px;
+      background: rgba(13,34,64,0.06);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+      color: var(--navy-mid);
+    }
+    .rc-icon svg { width: 20px; height: 20px; }
+
+    .rc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .rc-body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ─── TIMELINE ──────────────────────────────────────── */
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px; top: 8px; bottom: 8px;
+      width: 1px;
+      background: var(--rule);
+    }
+
+    .tl-item { position: relative; margin-bottom: 36px; }
+    .tl-item:last-child { margin-bottom: 0; }
+
+    .tl-dot {
+      position: absolute;
+      left: -29px; top: 8px;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--navy-mid);
+    }
+    .tl-item.current .tl-dot { background: var(--gold); border-color: var(--gold); }
+
+    .tl-period {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+    .tl-role { font-weight: 600; font-size: 1rem; color: var(--navy); margin-bottom: 2px; }
+    .tl-org  { font-size: 0.88rem; color: var(--muted); margin-bottom: 6px; font-style: italic; }
+    .tl-desc { font-size: 0.9rem; color: #404050; font-weight: 300; }
+
+    /* ─── EDUCATION ─────────────────────────────────────── */
+    .edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+    .edu-card {
+      background: var(--white);
+      padding: 28px;
+      border: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .edu-badge {
+      width: 44px; height: 44px;
+      background: var(--navy);
+      color: var(--gold-light);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem; font-weight: 500;
+      letter-spacing: 0.04em;
+      text-align: center; line-height: 1.2;
+      flex-shrink: 0;
+    }
+
+    .edu-degree { font-weight: 600; color: var(--navy); font-size: 0.97rem; margin-bottom: 3px; }
+    .edu-field  { color: var(--teal); font-size: 0.88rem; margin-bottom: 4px; }
+    .edu-school { color: var(--muted); font-size: 0.83rem; font-style: italic; }
+
+    /* ─── PUBLICATIONS STRIP ────────────────────────────── */
+    .pubs-note {
+      background: var(--navy);
+      color: rgba(255,255,255,0.75);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .pubs-note-text { max-width: 600px; }
+    .pubs-note-text strong {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.15rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .pubs-note-text p { font-size: 0.9rem; font-weight: 300; }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 13px 26px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.07em;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    /* ─── CONTACT — 3 cards ─────────────────────────────── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .contact-card {
+      background: var(--white);
+      padding: 36px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.18s;
+      cursor: pointer;
+    }
+    .contact-card:hover { background: var(--navy); }
+    .contact-card:hover .cc-icon  { color: var(--gold-light); }
+    .contact-card:hover .cc-label { color: var(--gold-light); }
+    .contact-card:hover .cc-name  { color: var(--white); }
+
+    .cc-icon  { color: var(--navy-mid); transition: color 0.18s; }
+    .cc-icon svg { width: 28px; height: 28px; }
+
+    .cc-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.18s;
+    }
+
+    .cc-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: center;
+      transition: color 0.18s;
+    }
+
+    /* ─── FOOTER ────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .foot-name {
+      font-family: 'Playfair Display', serif;
+      color: rgba(255,255,255,0.9);
+      font-size: 1rem;
+    }
+
+    /* ─── RESPONSIVE ────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding: 40px 24px; }
+      .hero-divider { display: none; }
+      .hero-content { padding: 0 0 32px; }
+      .hero-photo-col { padding: 0 0 40px; }
+      .bio-layout { grid-template-columns: 1fr; gap: 40px; }
+      .research-grid { grid-template-columns: 1fr; }
+      .edu-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .page-body { padding: 0 24px; }
+      .pubs-note { padding: 32px 24px; }
+      footer { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ HERO ══════════════ -->
+<header class="hero">
+  <div class="hero-divider"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Public Health Researcher &amp; Educator</div>
+    <h1 class="hero-name">Moaz Abdelwadoud</h1>
+    <div class="hero-credentials">MD &nbsp;·&nbsp; DrPH &nbsp;·&nbsp; MPH</div>
+
+    <div class="hero-title-block">
+      <span class="title-line bold">Research Scientist &amp; Senior Director of Training</span>
+      <span class="title-line">Center for Systems &amp; Community Design</span>
+      <span class="title-line bold spacer">Adjunct Assistant Professor</span>
+      <span class="title-line">Department of Health Policy and Management</span>
+      <span class="title-line bold spacer">Public Health Impact Mentor</span>
+      <span class="title-line">Firefly Innovations</span>
+      <span class="title-line spacer" style="color:rgba(255,255,255,0.5); font-size:0.92rem;">CUNY Graduate School of Public Health and Health Policy</span>
+    </div>
+  </div>
+
+  <div class="hero-photo-col">
+    <div class="hero-photo-box">
+      <img src="headshot.jpeg"
+           alt="Dr. Moaz Abdelwadoud — Public Health Researcher and Educator at CUNY"
+           class="hero-headshot" />
+    </div>
+  </div>
+</header>
+<div class="gold-stripe"></div>
+
+<!-- ══════════════ PAGE BODY ══════════════ -->
+<div class="page-body">
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="section-label">About</div>
+    <div class="bio-layout">
+      <div class="bio-text">
+        <p>Dr. Moaz Abdelwadoud is a public health researcher, educator, and physician with over fifteen years of experience spanning clinical medicine, health systems research, and global public health practice across the Middle East, Sub-Saharan Africa, Europe, and the United States.</p>
+        <p>He currently serves as Research Scientist and Senior Director of Training at the Center for Systems &amp; Community Design at the CUNY Graduate School of Public Health and Health Policy, where he leads training initiatives and contributes to research advancing community-engaged and systems-based approaches to improving population health.</p>
+        <p>He is also an Adjunct Assistant Professor in the Department of Health Policy and Management, where he teaches graduate courses in public health policy, organizational management, and comparative urban health systems, and contributes to the relaunch of the school's Doctor of Public Health program.</p>
+        <p>Dr. Abdelwadoud also serves as a Public Health Impact Mentor at Firefly Innovations, CUNY's digital health startup accelerator, mentoring early-stage digital health companies on strategy, growth, and health system integration.</p>
+        <p>His research focuses on health systems and services research, with particular emphasis on patient-centered care, community engagement, and equitable access to health services and health information. His work includes collaborations with the National Institutes of Health, U.S. Food &amp; Drug Administration, U.S. Department of Defense, Veterans Health Administration, and the World Food Programme.</p>
+      </div>
+
+      <div class="bio-sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Current Affiliations</div>
+          <div class="sidebar-card-body">
+            <div class="affil-item">
+              <span class="affil-role">Research Scientist &amp; Sr. Director of Training</span>
+              <span class="affil-org">Center for Systems &amp; Community Design, CUNY SPH</span>
+            </div>
+            <div class="affil-item">
+              <span class="affil-role">Adjunct Assistant Professor</span>
+              <span class="affil-org">Dept. of Health Policy &amp; Management, CUNY SPH</span>
+            </div>
+            <div class="affil-item">
+              <span class="affil-role">Public Health Impact Mentor</span>
+              <span class="affil-org">Firefly Innovations, CUNY</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Research Collaborators</div>
+          <div class="sidebar-card-body" style="font-size:0.85rem; color:var(--muted); line-height:1.9; letter-spacing:0.02em;">
+            NIH &nbsp;·&nbsp; CDC &nbsp;·&nbsp; FDA &nbsp;·&nbsp; VHA<br>
+            PCORI &nbsp;·&nbsp; RWJF &nbsp;·&nbsp; WFP
+          </div>
+        </div>
+
+        <div class="sidebar-card" style="border-left-color: var(--gold);">
+          <div class="sidebar-card-title">Location</div>
+          <div class="sidebar-card-body">New York City, USA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH FOCUS — 4 cards, 2×2 -->
+  <section class="section">
+    <div class="section-label">Research Focus</div>
+    <div class="research-grid">
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="rc-title">Health Systems &amp; Services Research</div>
+        <div class="rc-body">Analyzing health system performance, equitable access, and the organizational factors shaping care delivery across diverse global contexts.</div>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="rc-title">Patient-Centered Care &amp; Community Engagement</div>
+        <div class="rc-body">Developing community-engaged and patient-centered methodologies to improve health outcomes and research participation among underserved populations.</div>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="rc-title">Digital Health &amp; Telehealth Innovation</div>
+        <div class="rc-body">Evaluating telehealth platforms and digital health technologies for scalability, equity impact, and integration into healthcare systems.</div>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="rc-title">Public Health Education &amp; Leadership</div>
+        <div class="rc-body">Training and mentoring the next generation of public health professionals through innovative pedagogy and applied practice experiences.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <div class="section-label">Professional Experience</div>
+    <div class="section-title" style="margin-bottom:40px;">Career Highlights</div>
+    <div class="timeline">
+
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-period">October 2024 — Present</div>
+        <div class="tl-role">Research Scientist &amp; Senior Director of Training</div>
+        <div class="tl-org">Center for Systems &amp; Community Design (CSCD), CUNY Graduate School of Public Health</div>
+        <div class="tl-desc">Leads training curricula development, oversees consultation processes, and contributes to systems and community-engaged research. Current project: NIH-funded community-engaged park renovation intervention.</div>
+      </div>
+
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-period">January 2025 — Present</div>
+        <div class="tl-role">Adjunct Assistant Professor, Health Policy &amp; Management</div>
+        <div class="tl-org">CUNY Graduate School of Public Health and Health Policy, New York</div>
+        <div class="tl-desc">Teaches Organizational Management in Public Health, Comparative Analyses of Urban Health Care Systems, and Public Health Policy Analysis. Co-leads relaunch of the school's DrPH program.</div>
+      </div>
+
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-period">June 2025 — Present</div>
+        <div class="tl-role">Public Health Impact Mentor</div>
+        <div class="tl-org">Firefly Innovations, CUNY Digital Health Accelerator</div>
+        <div class="tl-desc">Mentors pre-seed/seed digital health startups on growth strategy, health equity, and integration into public health systems.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">September 2021 — August 2024</div>
+        <div class="tl-role">Visiting Assistant Professor of Global Health</div>
+        <div class="tl-org">New York University School of Global Public Health</div>
+        <div class="tl-desc">Taught master's and doctoral-level courses including Foundations of Global Health and Applying Systems Thinking. Served on DrPH program committee. Faculty mentor for MPH applied practice experiences.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">May 2018 — August 2021</div>
+        <div class="tl-role">Postdoctoral Researcher</div>
+        <div class="tl-org">Department of Pharmaceutical Health Services Research, University of Maryland School of Pharmacy</div>
+        <div class="tl-desc">Conducted PCOR and community-engaged research under the AHRQ-funded PATIENTS Program. Projects included FDA health communications and telehealth innovation in the U.S. military.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="section-label">Education</div>
+    <div class="edu-grid">
+
+      <div class="edu-card">
+        <div class="edu-badge">DrPH</div>
+        <div>
+          <div class="edu-degree">Doctor of Public Health</div>
+          <div class="edu-field">Health Management and Policy</div>
+          <div class="edu-school">University of Kentucky — Lexington, KY, 2017</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-badge">MPH</div>
+        <div>
+          <div class="edu-degree">Master of Public Health — <em>with Merit &amp; Full Scholarship</em></div>
+          <div class="edu-field">International Health Development</div>
+          <div class="edu-school">Vrije Universiteit Amsterdam &amp; Royal Tropical Institute, 2013</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-badge">MPH</div>
+        <div>
+          <div class="edu-degree">Master of Public Health</div>
+          <div class="edu-field">Preventive Community Medicine</div>
+          <div class="edu-school">Cairo University, Egypt, 2011</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-badge" style="font-size:0.52rem;">MBBCh</div>
+        <div>
+          <div class="edu-degree">Bachelor of Medicine &amp; Surgery</div>
+          <div class="edu-field">US MD Equivalent — <em>First-Class Honours</em></div>
+          <div class="edu-school">Ain Shams University, Cairo, Egypt, 2005</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-body -->
+
+<!-- PUBLICATIONS STRIP -->
+<div class="pubs-note">
+  <div class="pubs-note-text">
+    <strong>Publications &amp; Scholarly Work</strong>
+    <p>Dr. Abdelwadoud has authored peer-reviewed articles in journals including <em>Military Medicine</em>, <em>International Journal of Environmental Research and Public Health</em>, <em>Pediatric Allergy and Immunology</em>, <em>The Patient</em>, and <em>Public Health Genomics</em>. He serves as a peer reviewer for IJHPM, Value in Health, PLOS ONE, and other leading journals.</p>
+  </div>
+  <a class="btn-gold" href="https://scholar.google.com/citations?user=mBmPj7QAAAAJ" target="_blank" rel="noopener noreferrer">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-24L0 9.5h4.5v9h15v-9H24L12 0Z"/></svg>
+    View on Google Scholar
+  </a>
+</div>
+
+<!-- CONTACT -->
+<div class="page-body">
+  <section class="section">
+    <div class="section-label">Contact &amp; Profiles</div>
+    <div class="contact-grid">
+
+      <!-- LinkedIn -->
+      <a class="contact-card"
+         href="https://www.linkedin.com/in/moazabdelwadoud"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn profile">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+          </svg>
+        </div>
+        <div class="cc-label">Connect</div>
+        <div class="cc-name">LinkedIn</div>
+      </a>
+
+      <!-- ORCID — uses Scholar mortarboard icon as requested -->
+      <a class="contact-card"
+         href="https://orcid.org/0000-0001-9716-5140"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="ORCID profile">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-24L0 9.5h4.5v9h15v-9H24L12 0Z"/>
+          </svg>
+        </div>
+        <div class="cc-label">Researcher ID</div>
+        <div class="cc-name">ORCID</div>
+      </a>
+
+      <!-- Email -->
+      <a class="contact-card"
+         href="mailto:moaz.abdelwadoud@sph.cuny.edu"
+         aria-label="Send email">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="2,4 12,13 22,4"/>
+          </svg>
+        </div>
+        <div class="cc-label">Get in Touch</div>
+        <div class="cc-name">Email</div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-name">Moaz Abdelwadoud — MD, DrPH, MPH</div>
+</footer>
+
+</body>
+</html>
